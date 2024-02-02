@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("../img/5.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.pokemon1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 150px;
+    margin-left: 350px;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+}
+
+.pokemon2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 1350px;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+}
+
+.pokemon1:hover,
+.pokemon2:hover {
+    transform: scale(1.1);
+}
+
+.pokemon1 h2,
+.pokemon2 h2 {
+    color: #ff0000;
+}
+
+.pokemon1 p,
+.pokemon2 p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.pokemon-winner {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+
+.pokemon1:hover,
+.pokemon2:hover {
+    transform: scale(1.1);
+}
+
+.pokemon1 h2,
+.pokemon2 h2 {
+    color: #ff0000;
+}
+
+.pokemon1 p,
+.pokemon2 p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.pokemon-winner {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #ffffff;
+}
