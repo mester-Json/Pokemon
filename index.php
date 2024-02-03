@@ -72,30 +72,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.php"> <img class="neon-border" src="./asset/img/Ideas_Surprised_Pikachu_HD.png" alt=""></a>
+            <h1>Pokémon</h1>
+            <a class="select" href="selection.php">Sélection</a>
+        </nav>
+    </header>
     <form action="combat.php" method="post" enctype="multipart/form-data">
-        <h2>Pokemon 1</h2>
-        <input type="file" name="image1" accept="image/*">
-        <input type="text" name="name1" placeholder="Nom">
-        <input type="number" name="healthPoints1" min="0" placeholder="Points de vie">
-        <input type="number" name="atk1" min="0" placeholder="Attaque">
-        <select id="type" name="type1">
-            <option value="Eau">Eau</option>
-            <option value="Feu">Feu</option>
-            <option value="Plante">Plante</option>
-        </select>
-        <h2>Pokemon 2</h2>
-        <input type="file" name="image2" accept="image/*">
-        <input type="text" name="name2" placeholder="Nom">
-        <input type="number" name="healthPoints2" min="0" placeholder="Points de vie">
-        <input type="number" name="atk2" min="0" placeholder="Attaque">
-        <select id="type" name="type2">
-            <option value="Eau">Eau</option>
-            <option value="Feu">Feu</option>
-            <option value="Plante">Plante</option>
-        </select>
-        <input type="submit" value="Faire combattre">
-        <a href="selection.php"> selection </a>
+        <div class="pokemon1">
+            <h2>Pokemon 1</h2>
+            <label for=""> Mon Image </label>
+            <input type="file" name="image1" accept="image/*">
+            <label for=""> Nom Du Pokémon </label>
+            <input type="text" name="name1" placeholder="Nom">
+            <label for=""> Points de vie </label>
+            <input type="number" name="healthPoints1" min="0" placeholder="Points de vie">
+            <label for="">Points d'Attaque </label>
+            <input type="number" name="atk1" min="0" placeholder="Attaque">
+            <label for="">Type De Mon Pokémon </label>
+            <select id="type" name="type1">
+                <option value="Eau">Eau</option>
+                <option value="Feu">Feu</option>
+                <option value="Plante">Plante</option>
+            </select>
+        </div>
+        <div class="combat">
+            <img class="vs" src="./asset/img/vs.png" alt="Image de Pokemon">
+            <input type="submit" value="Faire combattre">
+        </div>
+        <div class="pokemon2">
+            <h2>Pokemon 2</h2>
+            <label for=""> Mon Image </label>
+            <input type="file" name="image2" accept="image/*">
+            <label for=""> Nom Du Pokémon </label>
+            <input type="text" name="name2" placeholder="Nom">
+            <label for=""> Points de vie </label>
+            <input type="number" name="healthPoints2" min="0" placeholder="Points de vie">
+            <label for="">Points d'Attaque </label>
+            <input type="number" name="atk2" min="0" placeholder="Attaque">
+            <label for="">Type De Mon Pokémon </label>
+            <select id="type" name="type2">
+                <option value="Eau">Eau</option>
+                <option value="Feu">Feu</option>
+                <option value="Plante">Plante</option>
+            </select>
+        </div>
     </form>
+
+    <footer>
+        <p>© 2024 Pokémon. Développé par mrJson </p>
+    </footer>
 </body>
 
 </html>

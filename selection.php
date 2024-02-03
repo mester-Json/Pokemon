@@ -24,7 +24,13 @@ try {
 </head>
 
 <body>
-
+    <header>
+        <nav>
+            <a href="index.php"> <img class="neon-border" src="./asset/img/Ideas_Surprised_Pikachu_HD.png" alt=""></a>
+            <h1>Pokémon</h1>
+            <a class="select" href="selection.php">Sélection</a>
+        </nav>
+    </header>
     <form action="combat.php" method="post" enctype="multipart/form-data">
         <h2>Pokemon 1</h2>
         <?php foreach ($pokemons as $pokemon): ?>
@@ -80,6 +86,7 @@ try {
         <?php endforeach; ?>
         </div>
         <input type="submit" value="Faire combattre">
+
     </form>
 </body>
 

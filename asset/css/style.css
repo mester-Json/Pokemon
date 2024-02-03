@@ -3,24 +3,125 @@ body {
     background-image: url("../img/5.png");
     background-attachment: fixed;
     background-size: cover;
-    padding: 20px;
+
+    margin: 0;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-image: url("../img/pokeball.png");
+    background-size: cover;
+    cursor: crosshair;
+    box-shadow: 0px 0px 10px rgba(0, 255, 34, 0.1);
+
+}
+
+.neon-border {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff;
+    animation: neon-border 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-border {
+    0% {
+        border-color: #fff;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    100% {
+        border-color: #0ff;
+        box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+    }
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.select {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid #ccc;
+    text-align: center;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.select:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
 
 form {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    width: 380px;
-    border-radius: 30px;
-    margin-top: 20px;
-    margin-left: 725px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    text-align: center;
+    display: flex;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+
+.pokemon1,
+.pokemon2 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 150px;
+    margin-left: 150px;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+}
+
+.combat {
+    display: flex;
+    flex-direction: column;
+}
+
+.vs {
+    margin-top: 170px;
+    margin-left: 150px;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 170px;
+    margin-top: 100px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: crosshair;
+    transition: border-color 0.5s, transform 0.5s, background-color 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #fdfeff;
+    color: #000000;
+    border: solid #000000;
+    transform: scale(1.1);
 }
 
 input[type="text"],
@@ -36,36 +137,6 @@ input[type="file"] {
     background-color: #fff;
     color: #000000;
     animation: border-color-change 5s infinite;
-
-}
-
-input[type="file"] {
-    background-color: #000000;
-    color: #ffffff;
-    border: 3px solid red;
-    border-radius: 20px;
-    margin-left: 5px;
-    padding: 10px;
-    cursor: crosshair;
-    animation: border-color-change 5s infinite;
-    transition: border-color 0.5s, transform 0.5s;
-}
-
-input[type="file"]:hover {
-    background-color: #ffffff;
-    color: #000000;
-    transform: scale(1.1);
-}
-
-
-
-a {
-
-    text-decoration: none;
-    margin-left: 50px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 select {
@@ -79,42 +150,19 @@ select {
     animation: border-color-change 5s infinite;
 }
 
-input[type="submit"] {
-    background-color: #000000;
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    padding: 20px;
     color: #fff;
-    border: 3px solid red;
-    border-radius: 20px;
-    margin-left: 20px;
-    padding: 10px;
-    cursor: crosshair;
-    animation: border-color-change 5s infinite;
-    transition: border-color 0.5s, transform 0.5s;
-
-}
-
-input[type="submit"]:hover {
-    background-color: #fdfeff;
-    color: #000000;
-    transform: scale(1.1);
-
-}
-
-input[type="submit"]:focus {
-    border-color: green;
-}
-
-@keyframes border-color-change {
-    0% {
-        border-color: red;
-    }
-
-    50% {
-        border-color: blue;
-    }
-
-    100% {
-        border-color: green;
-    }
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 43px;
 }
 
 ::placeholder {
