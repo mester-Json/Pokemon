@@ -53,29 +53,115 @@ nav h1 {
 
 }
 
-.select {
-    text-decoration: none;
+.pokemon-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 37px;
+}
+
+.pokemon1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 150px;
+    width: 350px;
+    height: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid #000000;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.pokemon2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid #000000;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-right: 150px;
+    transition: all 0.5s;
+}
+
+.pokemon1:hover,
+.pokemon2:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    scale: 1.1;
+    border-radius: 15px 15px 15px 15px;
+    border: 3px solid #000000;
+}
+
+
+
+.containerResult {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    background-color: #fff;
+    border: 3px dotted #000000;
+    border-radius: 15px;
+    padding: 10px;
+    width: 50%;
+    margin-left: 500px;
+    margin-top: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+
+h3 {
+    color: #000000;
+    font-size: 23px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#pokemon-winner {
     color: #000000;
     font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    border-radius: 20px;
-    border: 3px solid #ccc;
-    text-align: center;
-    transition: background-color 0.5s, transform 0.5s;
+    margin-top: 2px;
+    margin-left: 5px;
 }
 
-.select:hover {
-    background-color: #000000;
+.fa-a {
     color: #ffffff;
-    transform: scale(1.1);
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 4px;
+    background-color: green;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 10px 15px 10px 15px;
+
 }
 
+.fa-b {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: rgb(189, 5, 5);
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 10px 15px 10px 15px;
+}
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.fa-a:hover {
+    background-color: #05d905;
+    cursor: pointer;
+}
+
+.fa-b:hover {
+    background-color: #ff0000;
+    cursor: pointer;
 }
 
 footer {
@@ -85,53 +171,5 @@ footer {
     color: #fff;
     background-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 43px;
-}
-
-.containerResult {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    background-color: #fff;
-    border: 3px dotted #000000;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-h3 {
-    color: #000000;
-    font-size: 30px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#pokemon-winner {
-    color: #000000;
-    font-size: 30px;
-    margin-top: 2px;
-    margin-left: 5px;
-}
-
-.fa-a {
-    color: #ffffff;
-    font-size: 29px;
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 1804px;
-    background-color: green;
-    border-radius: 50%;
-    padding: 10px 15px 10px 15px;
-
-}
-
-.fa-b {
-    color: #ffffff;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 1805px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 50%;
-    padding: 10px 15px 10px 15px;
+    margin-top: 40px;
 }

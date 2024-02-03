@@ -28,10 +28,9 @@ try {
     <header>
         <nav>
             <a href="index.php"> <img class="neon-border" src="./asset/img/Ideas_Surprised_Pikachu_HD.png" alt=""></a>
-            <h1>Pokémon</h1>
+            <h1>Combat Pokemon </h1>
         </nav>
     </header>
-    <h2>Combat Pokémon</h2>
     <?php
     include_once 'class/Pokemon.php';
     $selected_pokemons = $_POST['selected_pokemons'] ?? [];
