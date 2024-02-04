@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const audioFile = './asset/audio/pokemon-battle.mp3';
+    const audioFile = './asset/audio/driftveil-city.mp3';
     const request = new XMLHttpRequest();
     request.open('GET', audioFile, true);
     request.responseType = 'arraybuffer';

@@ -11,6 +11,8 @@ try {
     exit;
 }
 
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -146,7 +148,7 @@ try {
         <p>© 2024 Pokémon. Développé par mrJson </p>
     </footer>
     <script src="./asset/js/combat.js"></script>
-    <script src="./asset/js/index.js"></script>
+    <!-- <script src="./asset/js/index.js"></script> -->
 
 
 </body>

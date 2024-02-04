@@ -119,6 +119,65 @@ form {
     }
 }
 
+/* 
+.poke1 input[type="checkbox"] {
+    display: none;
+}
+
+.poke2 input[type="checkbox"] {
+    display: none;
+}
+
+.poke1 label {
+    cursor: pointer;
+}
+
+.poke2 label {
+    cursor: pointer;
+}
+
+.poke1 label:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/pokeball.png');
+    background-size: cover;
+    margin-right: 10px;
+    animation: rotate 0.3s linear;
+
+}
+
+.poke2 label:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/pokeball.png');
+    background-size: cover;
+    margin-right: 10px;
+    animation: rotate 0.3s linear;
+
+}
+
+.poke1 input[type="checkbox"]:checked+label:before {
+    background-image: url('../img/pokeball.png');
+}
+
+.poke2 input[type="checkbox"]:checked+label:before {
+    background-image: url('../img/pokeball.png');
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
 .select1::-webkit-scrollbar,
 .select2::-webkit-scrollbar {
     display: none;
