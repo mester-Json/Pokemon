@@ -2,8 +2,8 @@
 
 define('HOST', 'localhost');
 define('DB_NAME', 'Pokemon');
-define('USER', 'root');
-define('PASS', '157326');
+define('USER', '');
+define('PASS', '');
 
 try {
     $conn = new PDO("mysql:host=" . HOST . ";dbname=" . DB_NAME, USER, PASS);
