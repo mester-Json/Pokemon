@@ -18,6 +18,7 @@ try {
 <html>
 
 <head>
+    <link rel="shortcut icon" href="./asset/img/gaming.ico" type="image/x-icon">
     <link rel="stylesheet" href="./asset/css/combat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -115,9 +116,9 @@ try {
                 }
             }
             if ($pokemon1->isDead()) {
-                echo '<p id="pokemon-winner">' . $pokemon2->getName() . ' |HP: ' . $pokemon2->getHealthPoints() . ' |ATK: ' . $pokemon2->getAtk() . ' a gagné le combat! </p>';
+                echo '<pre id="pokemon-winner">' . $pokemon2->getName() . ' |HP:' . $pokemon2->getHealthPoints() . ' |ATK:' . $pokemon2->getAtk() . ' a gagné le combat!</pre>';
             } else {
-                echo '<p id="pokemon-winner">' . $pokemon1->getName() . ' |HP: ' . $pokemon1->getHealthPoints() . ' |ATK: ' . $pokemon1->getAtk() . ' a gagné le combat! </p>';
+                echo '<pre id="pokemon-winner">' . $pokemon1->getName() . ' |HP:' . $pokemon1->getHealthPoints() . ' |ATK:' . $pokemon1->getAtk() . ' a gagné le combat!</pre>';
             }
 
         }
@@ -148,7 +149,7 @@ try {
         <p>© 2024 Pokémon. Développé par mrJson </p>
     </footer>
     <script src="./asset/js/combat.js"></script>
-    <!-- <script src="./asset/js/index.js"></script> -->
+    <script src="./asset/js/index.js"></script>
 
 
 </body>

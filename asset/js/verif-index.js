@@ -16,7 +16,6 @@ function validateForm() {
     return true;
 }
 
-// Appeler la fonction validateForm lors de la soumission du formulaire
 document.querySelector('form').addEventListener('submit', function (event) {
     if (!validateForm()) {
         event.preventDefault();

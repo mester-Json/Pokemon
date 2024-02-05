@@ -23,6 +23,7 @@ try {
 <html>
 
 <head>
+    <link rel="shortcut icon" href="./asset/img/gaming.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./asset/css/selection.css">
     <title>Combat de Pokémon</title>
@@ -57,7 +58,7 @@ try {
 
                     <?php endif; ?>
 
-                    <label for="pokemon<?= $pokemon1['id'] ?>">
+                    <label class="label1" for="pokemon<?= $pokemon1['id'] ?>">
                         <?= $pokemon1['name'] ?> (Type:
                         <?= $pokemon1['type'] ?>, HP:
                         <?= $pokemon1['hp'] ?>, Atk:
@@ -88,7 +89,7 @@ try {
 
                     <?php endif; ?>
 
-                    <label for="pokemon<?= $pokemon2['id'] ?>">
+                    <label class="label2" for="pokemon<?= $pokemon2['id'] ?>">
                         <?= $pokemon2['name'] ?> (Type:
                         <?= $pokemon2['type'] ?>, HP:
                         <?= $pokemon2['hp'] ?>, Atk:

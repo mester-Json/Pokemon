@@ -21,9 +21,8 @@ nav img {
     height: 100px;
     border-radius: 50%;
     margin-left: 20px;
-    background-image: url("../img/pokeball.png");
+    background-image: url("../img/pokeball-png-45332.png");
     background-size: cover;
-
     box-shadow: 0px 0px 10px rgba(0, 255, 34, 0.1);
 
 }
@@ -35,6 +34,7 @@ nav img {
     animation: neon-border 1.5s ease-in-out infinite alternate;
 }
 
+
 @keyframes neon-border {
     0% {
         border-color: #fff;
@@ -42,15 +42,16 @@ nav img {
     }
 
     100% {
-        border-color: #0ff;
-        box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+        border-color: rgb(255, 255, 0);
+        box-shadow: 0 0 20px rgb(255, 255, 0), 0 0 40px rgb(255, 255, 0), 0 0 80px rgb(255, 255, 0);
     }
 }
 
 nav h1 {
-    color: #fff;
-    font-size: 30px;
-
+    color: #ffffff;
+    font-size: 34px;
+    margin-right: 750px;
+    padding: 10px;
 }
 
 nav a {
@@ -105,7 +106,7 @@ form {
     }
 
     100% {
-        box-shadow: 0 0 20px rgb(255, 0, 251), 0 0 40px rgb(255, 0, 251), 0 0 80px rgb(255, 0, 251);
+        box-shadow: 0 0 20px rgb(38, 255, 0), 0 0 40px rgb(38, 255, 0), 0 0 80px rgb(38, 255, 0);
     }
 }
 
@@ -115,11 +116,11 @@ form {
     }
 
     100% {
-        box-shadow: 0 0 20px #ff0, 0 0 40px #ff0, 0 0 80px #ff0;
+        box-shadow: 0 0 20px rgb(0, 0, 255), 0 0 40px rgb(0, 0, 255), 0 0 80px rgb(0, 0, 255);
     }
 }
 
-/* 
+
 .poke1 input[type="checkbox"] {
     display: none;
 }
@@ -176,7 +177,7 @@ form {
     to {
         transform: rotate(360deg);
     }
-} */
+}
 
 .select1::-webkit-scrollbar,
 .select2::-webkit-scrollbar {
@@ -221,5 +222,5 @@ footer {
     color: #fff;
     background-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 43px;
+    margin-top: 154px;
 }

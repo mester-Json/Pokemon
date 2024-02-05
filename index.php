@@ -21,8 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         empty($name2) || empty($healthPoints2) || empty($atk2) || empty($type2)
     ) {
         echo "Veuillez remplir tous les champs";
-    } else {
-        // Traitez les données du formulaire
     }
 
 
@@ -54,8 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 break;
         }
     }
-
-
     function combat($pokemon1, $pokemon2)
     {
         while (!$pokemon1->isDead() && !$pokemon2->isDead()) {
@@ -79,6 +75,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
+    <link rel="shortcut icon" href="./asset/img/gaming.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./asset/css/style.css">
     <title>Création de Pokémon</title>
 </head>
@@ -89,8 +89,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="index.php"> <img id="nav-image" class="neon-border"
                     src="./asset/img/Ideas_Surprised_Pikachu_HD.png" alt=""></a>
 
-            <h1>Pokémon</h1>
-            <a class="select" href="selection.php">Sélection</a>
+            <image class="img2" src="./asset/img/International_Pokémon_logo.svg.png"></image>
+            <a href="selection.php"><i class="fa-solid fa-laptop"></i></a>
         </nav>
     </header>
     <form action="combat.php" method="post" enctype="multipart/form-data">

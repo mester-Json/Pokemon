@@ -3,7 +3,7 @@ text = text.replace(/ /g, ' ');
 let delay = 100;
 let i = 0;
 
-document.getElementById('pokemon-winner').innerText = '';
+document.getElementById('pokemon-winner').innerText = '  ';
 
 function typeWriter() {
     if (i < text.length) {
@@ -21,7 +21,7 @@ text2 = text2.replace(/ /g, ' ');
 let delay2 = 100;
 let j = 0;
 
-document.getElementById('res').innerText = '';
+document.getElementById('res').innerText = '  ';
 
 function typeWriter2() {
     if (j < text2.length) {
