@@ -4,9 +4,9 @@ if (!defined('HOST'))
 if (!defined('DB_NAME'))
     define('DB_NAME', 'Pokemon');
 if (!defined('USER'))
-    define('USER', '');
+    define('USER', 'root');
 if (!defined('PASS'))
-    define('PASS', '');
+    define('PASS', '157326');
 
 try {
     $conn = new PDO("mysql:host=" . HOST . ";dbname=" . DB_NAME, USER, PASS);
