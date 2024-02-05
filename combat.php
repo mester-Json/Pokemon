@@ -49,6 +49,11 @@ try {
     ?>
     <div class="pokemon-container">
         <div class="pokemon1">
+            <img class="PokeImg2" src="<?php echo $pokemon1ImagePath; ?>
+            <?php echo isset($pokemon_details[0]['img']) ? $pokemon_details[0]['img'] : '' ?>
+            " alt="Pokemon 1 Image">
+
+
             <h2>
                 <?php echo ($_POST['name1']) ?>
                 <?php echo isset($pokemon_details[0]['name']) ? $pokemon_details[0]['name'] : '' ?>
@@ -65,13 +70,13 @@ try {
 
             </p>
 
-            <img src="<?php echo ($_POST['img1']) ?> 
-
-            <?php echo isset($pokemon_details[0]['img']) ? $pokemon_details[0]['img'] : '' ?>" alt="Image de Pokemon">
 
         </div>
 
         <div class="pokemon2">
+            <img class="PokeImg2" src="<?php echo $pokemon2ImagePath; ?>
+            <?php echo isset($pokemon_details[1]['img']) ? $pokemon_details[1]['img'] : '' ?>
+            " alt="Pokemon 1 Image">
             <h2>
                 <?php echo ($_POST['name2']) ?>
                 <?php echo isset($pokemon_details[1]['name']) ? $pokemon_details[1]['name'] : '' ?>
@@ -88,9 +93,7 @@ try {
 
             </p>
 
-            <img src="<?php echo ($_POST['img1']) ?> 
 
-            <?php echo isset($pokemon_details[1]['img']) ? $pokemon_details[1]['img'] : '' ?>" alt="Image de Pokemon">
 
         </div>
     </div>

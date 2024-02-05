@@ -16,6 +16,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $atk2 = $_POST["atk2"];
     $type2 = $_POST["type2"];
 
+    if ($_FILES['image1']['error'] == UPLOAD_ERR_OK) {
+        $uploadDir = 'images/';
+        $uploadFile = $uploadDir . basename($_FILES['image1']['name']);
+        move_uploaded_file($_FILES['image1']['tmp_name'], $uploadFile);
+        $pokemon1ImagePath = $uploadFile;
+    }
+
+    if ($_FILES['image2']['error'] == UPLOAD_ERR_OK) {
+        $uploadDir = 'images/';
+        $uploadFile = $uploadDir . basename($_FILES['image2']['name']);
+        move_uploaded_file($_FILES['image2']['tmp_name'], $uploadFile);
+        $pokemon2ImagePath = $uploadFile;
+    }
+
+
     if (
         empty($name1) || empty($healthPoints1) || empty($atk1) || empty($type1) ||
         empty($name2) || empty($healthPoints2) || empty($atk2) || empty($type2)
@@ -26,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if (isset($_POST['test'])) {
+        $pokemon1ImagePath = isset($pokemon1ImagePath) ? $pokemon1ImagePath : '';
         switch ($_POST['test']) {
             case 'Eau':
                 $pokemon1 = new Eau($_POST['name1'], $_POST['healthPoints1'], $_POST['atk1']);
@@ -40,6 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (isset($_POST['test2'])) {
+        $pokemon1ImagePath = isset($pokemon2ImagePath) ? $pokemon2ImagePath : '';
         switch ($_POST['test2']) {
             case 'Eau':
                 $pokemon2 = new Eau($_POST['name2'], $_POST['healthPoints2'], $_POST['atk2']);

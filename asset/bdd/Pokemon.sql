@@ -32,14 +32,15 @@ CREATE TABLE `pokemon` (
   `name` varchar(255) NOT NULL,
   `hp` varchar(255) NOT NULL,
   `atk` varchar(255) NOT NULL,
-  `type` varchar(255) NOT NULL
+  `type` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `pokemon`
 --
 
-INSERT INTO `pokemon` (`id`, `name`, `hp`, `atk`, `type`) VALUES
+INSERT INTO `pokemon` (`id`, `name`, `hp`, `atk`, `type` , `img` ) VALUES
 (1, 'Bulbasaur', '45', '49', 'Plante'),
 (2, 'Ivysaur', '60', '62', 'Plante'),
 (3, 'Venusaur', '80', '82', 'Plante'),

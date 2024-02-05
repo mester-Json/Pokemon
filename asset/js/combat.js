@@ -14,7 +14,8 @@ function typeWriter() {
     }
 }
 
-typeWriter();
+setTimeout(typeWriter, 1600);
+
 
 let text2 = document.getElementById('res').innerText;
 text2 = text2.replace(/ /g, ' ');

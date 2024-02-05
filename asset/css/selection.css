@@ -14,6 +14,11 @@ nav {
     padding: 20px;
     background-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    --mask:
+        radial-gradient(16.55px at 50% calc(100% - 23.40px), #000 99%, #0000 101%) calc(50% - 24px) 0/48px 100%,
+        radial-gradient(16.55px at 50% calc(100% + 11.40px), #0000 99%, #000 101%) 50% calc(100% - 12px)/48px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
 nav img {
@@ -85,6 +90,52 @@ form {
     overflow: auto;
     box-shadow: 0 0 5px #fff;
     transition: box-shadow 1.5s;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
 }
 
 .select1:hover {
@@ -206,6 +257,8 @@ input[type="submit"] {
     padding: 10px;
     cursor: crosshair;
     transition: border-color 0.5s, transform 0.5s, background-color 0.5s;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
 }
 
 input[type="submit"]:hover {
@@ -223,4 +276,9 @@ footer {
     background-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-top: 154px;
+    --mask:
+        radial-gradient(16.55px at 50% 23.40px, #000 99%, #0000 101%) calc(50% - 24px) 0/48px 100%,
+        radial-gradient(16.55px at 50% -11.4px, #0000 99%, #000 101%) 50% 12px/48px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
